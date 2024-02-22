@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="purse.css">
+    <title>Wish List </title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Jisel R Ruiz.png" alt="Website Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="purse.html">Purses</a></li>
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Random</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="filter">
+        <label>
+            Sort by Price:
+            <select id="priceFilter" onchange="sortPurses()">
+                <option value="reset">Reset</option>
+                <option value="lowToHigh">Low to High</option>
+                <option value="highToLow">High to Low</option>
+                
+            </select>
+        </label>
+    
+    
+    
+    <label>
+        Sort by Want:
+        <button onclick="filterMostToLeastWanted()">Most wanted filter </button>
+    </label>
+    
+    </div>
+    
+    <table id="purseTable" cellspacing="10" cellpadding="40" width="300">
+        <thead>
+            <tr> 
+                <th> Picture </th>
+                <th> Link </th>
+                <th>Price</th> 
+                <th>Notes </th>
+            </tr>
+        </thead>
+    
+    
+        <tbody>
+       <tr> 
+          <td><img src="Image.png" width="300" height="300"> </td> 
+          <td> <a href="https://eng.polene-paris.com/products/numero-dix-monochrome-camel-graine" target="_blank"> Polene </a> </td>
+          <td> $460</td>
+          <td> Color: Camel  </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="Image 2.png" width="300" height="300"> </td> 
+          <td> <a href="https://www.portlandleathergoods.com/products/almost-perfect-baguette-shoulder-bag?variant=40372363264082" target="_blank"> Black Purse </a> </td>
+          <td> $78</td>
+          <td> Color: Black</td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 3.png" width="300" height="300"> </td> 
+          <td> <a href="https://eng.polene-paris.com/products/numero-douze-taupe-graine " target="_blank"> Polene </a> </td>
+          <td> $430</td>
+          <td> Color: Taupe </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 4.png" width="300" height="300"> </td> 
+          <td> <a href="https://eng.polene-paris.com/products/tonca-laurier-graine " target="_blank"> Polene </a> </td>
+          <td> $450</td>
+          <td> Color: Laurier </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 5.png" width="300" height="300"> </td> 
+          <td> <a href="https://frejanyc.com/products/caroline-bag-oat" target="_blank"> Frejanyc </a> </td>
+          <td> $258</td>
+          <td> Color: Oat </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 6.png" width="300" height="300"> </td> 
+          <td> <a href="https://frejanyc.com/products/caroline-bag-pecan" target="_blank"> Frejanyc </a> </td>
+          <td> $258</td>
+          <td> Color:Pecan </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 7.png" width="300" height="300"> </td> 
+          <td> <a href="https://frejanyc.com/products/mini-shoulder-bag" target="_blank"> Frejanyc </a> </td>
+          <td> $248</td>
+          <td> Color: Oat, lol </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 8.png" width="300" height="300"> </td> 
+          <td> <a href="https://frejanyc.com/products/roma-bag-oat" target="_blank"> Frejanyc </a> </td>
+          <td> $248</td>
+          <td> Color:Oat </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 9.png" width="300" height="300"> </td> 
+          <td> <a href="https://eng.polene-paris.com/products/numero-dix-monochrome-noir-graine" target="_blank"> Polene </a> </td>
+          <td> $460</td>
+          <td> Color:Noir </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 10.png" width="300" height="300"> </td> 
+          <td> <a href="https://eng.polene-paris.com/products/numero-dix-monochrome-taupe-graine" target="_blank"> Polene </a> </td>
+          <td> $460</td>
+          <td> Color:Taupe </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 11.png" width="300" height="300"> </td> 
+          <td> <a href="https://www.teddyblake.com/products/kim-stampatto-9-dark-green" target="_blank"> Teddy Blake </a> </td>
+          <td> $450</td>
+          <td> Color: Dark Green </td>
+      </tr>
+      
+      <tr> 
+          <td><img src="ppics/Image 12.png" width="300" height="300"> </td> 
+          <td> <a href="https://www.teddyblake.com/products/kim-stampatto-9-orange" target="_blank"> Teddy Blake </a> </td>
+          <td> $425</td>
+          <td> Color: Orange </td>
+      </tr>
+    
+      <tr> 
+        <td><img src="ppics/Image 13.png" width="300" height="300"> </td> 
+        <td> <a href="https://frejanyc.com/products/mini-shoulder-bag-taupe" target="_blank"> Frejanyc </a> </td>
+        <td> $425</td>
+        <td> Color: Olive </td>
+    </tr>
+    <tr> 
+        <td><img src="ppics/Image 14.png" width="300" height="300"> </td> 
+        <td> <a href="https://frejanyc.com/products/mini-shoulder-bag-black" target="_blank"> Frejanyc </a> </td>
+        <td> $425</td>
+        <td> Color: Black </td>
+    </tr>
+    
+    </tbody>
+    </table>
+      <script src="purse.js"></script>
+    
+    </body>
+    </html>
